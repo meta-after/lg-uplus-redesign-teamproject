@@ -9,8 +9,7 @@ a {
     color: #2C2C2C;
 }
 
-/* 헤더 메뉴 */
-.navbar {
+.head_all {
     width: 100%;
     padding: 1% 10%;
     
@@ -29,54 +28,92 @@ a {
 }
 
 /* 로고 */
-.navbar .navbar_logo {
+.head_all .navbar_logo {
     width: 10%;
 }
-.navbar .navbar_logo img {
+.head_all .navbar_logo img {
     max-width: 60%;
 }
 
-/* 메인 메뉴 */
-.navbar .navbar_menu {
-    width: 60%;
+/* 메뉴 */
+.pc_menu {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
 }
-.navbar .navbar_menu li {
-   margin-right: 5%; 
+.pc_dropdown {
+    width: 70%;
 }
-.navbar .navbar_menu a {
-    transition: all 0.3 ease-in-out;
-}
-.navbar .navbar_menu a:hover {
-    color: #795c5c;
-}
-.navbar .navbar_menu li:nth-last-child(1) {
+
+/* 메뉴_상위 리스트 */
+.dropbtn{
+    border : none;
+    background: none;
+    font-weight: 400;
+    cursor : pointer;
+    transition: all 0.1s ease-in-out;
+    font-size: 12pt;
+  }
+  .dropbtn:hover {
+    color: #833e3e;
+  }
+  .dropdown{
+    position : relative;
+    display : inline-block;
+    margin-right: 5%;
+    cursor : pointer;
+  }
+  .dropdown:nth-last-child(1) {
     margin: 0;
+  }
+  
+.dropdown-content{
+  display : none;
+  position : absolute;
+  z-index : 1;
+  font-weight: 500;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  min-width : 150px;
+  height: 170px;
+  text-align: left;
+}
+.dropdown-content a{
+  display : block;
+  font-size: 10pt;
+  padding: 0.55rem 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.dropdown-content a:hover{
+    background-color : #f0f0f0;
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* 유저 액션버튼 */
-.navbar .navbar_act {
+.navbar_act {
     width: 25%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.navbar .navbar_act .navmenu_sign {
-    width: 45%;
+.navmenu_sign {
+    width: 43%;
     display: flex;
     justify-content: space-around;
 }
-.navbar .navbar_act .navmenu_sign a{
+.navmenu_sign a{
     font-weight: 300;
     font-size: 0.9rem;
 }
-.navbar .navbar_act .navmenu_usermenu {
+.navmenu_usermenu {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
 }
-.navbar .navbar_act .navmenu_usermenu img{
+.navmenu_usermenu img{
     max-width: 80%;
 }
