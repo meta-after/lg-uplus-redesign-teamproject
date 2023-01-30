@@ -11,7 +11,7 @@ a {
 
 .head_all {
     width: 100%;
-    padding: 1% 10%;
+    padding: 0.6% 10%;
     
     background-color: #fff;
     position: fixed;
@@ -54,6 +54,7 @@ a {
     cursor : pointer;
     transition: all 0.1s ease-in-out;
     font-size: 12pt;
+    padding: 10px;
   }
   .dropbtn:hover {
     color: #833e3e;
